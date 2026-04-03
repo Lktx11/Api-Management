@@ -6,7 +6,7 @@ class Clientes:
     def gerarApiKey(dados):
         nome = dados['nome']
         key = secrets.token_hex(32)
-        cursor.execute("INSERT INTO clientes (app_name, key, active) VALUES (?,?,?)", (nome, key, 1))
+        cursor.execute("INSERT INTO clientes (app_name, key, active, rate_limit, window) VALUES (?,?,?,?,?)", (nome, key, 1, 10, 60))
         conectar.commit()
         return jsonify({
             "status" : "sucesso",

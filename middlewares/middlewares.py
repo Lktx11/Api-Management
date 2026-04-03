@@ -2,6 +2,7 @@ from flask import jsonify, request,g
 from models.clientes.clientes import conectar
 from functools import wraps
 import time
+import json
 import logging
 import jwt
 cursor = conectar.cursor()
@@ -55,7 +56,7 @@ def api_key_required(func):
         if key == None:
             loggerWarning("Nao enviou uma key")
             return error(("Api key não enviada!"), 401)
-        cursor.execute("SELECT active, rate_limit, window FROM clientes WHERE key = ?", (key, ))
+        cursor.execute("SELECT active, rate_limit, window, allowed_routes FROM clientes WHERE key = ?", (key, ))
         key_dados = cursor.fetchone()
         if key_dados is None:
             loggerWarning("Nao enviou uma key valida")
@@ -66,6 +67,8 @@ def api_key_required(func):
         loggerWarning(f"Key={key} | Utilizou sua key")
         g.rate_limit = key_dados[1] or 10
         g.window = key_dados[2] or 60
+        g.key = key
+        g.allowed_routes = key_dados[3]
         return func(*args, **kwargs)
     return wrapper         
 
@@ -103,3 +106,26 @@ def rate_limit_api(func):
             bucket["ultimo_update"] = agora
             return func(*args,**kwargs)
         return wrapper
+
+
+def permission_required(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        allowed_routes = g.allowed_routes
+        if allowed_routes == None:
+            return error(("Voce nao tem nenhuma permissao"), 403)
+        rota_chamada = request.path
+        permitido = False
+        for rota in allowed_routes:
+            if rota_chamada == rota or rota_chamada.startswith(rota + "/"):
+                permitido = True
+                break
+
+        if not permitido:
+            loggerWarning(f"Key={g.key} | Tentou acessar uma rota que nao possui permissao ")
+            return error((f"Sem permissao a esta rota"), 403 )
+        
+        return func(*args, **kwargs)
+
+
+    return wrapper

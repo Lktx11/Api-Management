@@ -7,4 +7,5 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS clientes(
                key TEXT UNIQUE NOT NULL,
                active INTEGER NOT NULL 
                )""") #0 - desativado 1 - ativado
+
 conectar.commit()
