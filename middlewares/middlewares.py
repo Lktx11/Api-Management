@@ -111,15 +111,17 @@ def rate_limit_api(func):
 def permission_required(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
-        allowed_routes = g.allowed_routes
+        allowed_routes = json.loads(g.allowed_routes)
         if allowed_routes == None:
             return error(("Voce nao tem nenhuma permissao"), 403)
         rota_chamada = request.path
+        metodo_chamado = request.method.upper()
         permitido = False
-        for rota in allowed_routes:
+        for rota, metodos in allowed_routes.items():
             if rota_chamada == rota or rota_chamada.startswith(rota + "/"):
-                permitido = True
-                break
+                if metodo_chamado in metodos:
+                    permitido = True
+                    break
 
         if not permitido:
             loggerWarning(f"Key={g.key} | Tentou acessar uma rota que nao possui permissao ")

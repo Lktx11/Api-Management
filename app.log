@@ -1271,3 +1271,213 @@ TypeError: 'NoneType' object is not iterable
 2026-04-03 15:36:46,622 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
 2026-04-03 15:36:46,622 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 Utilizou o maximo de request permitidos
 2026-04-03 15:36:46,622 - INFO - 127.0.0.1 - - [03/Apr/2026 15:36:46] "[31m[1mGET /teste HTTP/1.1[0m" 429 -
+2026-04-05 08:51:08,854 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:51:08,858 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:51:29,625 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:51:29,626 - INFO - 127.0.0.1 - - [05/Apr/2026 08:51:29] "GET /teste HTTP/1.1" 200 -
+2026-04-05 08:53:15,760 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:53:15,760 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:53:17,738 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:53:17,738 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 107, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 120, in wrapper
+    for rota, metodo in allowed_routes:
+        ^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+2026-04-05 08:53:17,741 - INFO - 127.0.0.1 - - [05/Apr/2026 08:53:17] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 08:53:53,013 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:53:53,013 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:54:06,961 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:54:06,962 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 107, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 120, in wrapper
+    for rota, metodo in allowed_routes:
+        ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2026-04-05 08:54:06,964 - INFO - 127.0.0.1 - - [05/Apr/2026 08:54:06] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 08:54:39,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:54:39,050 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:54:42,744 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:54:42,745 - INFO - 127.0.0.1 - - [05/Apr/2026 08:54:42] "GET /teste HTTP/1.1" 200 -
+2026-04-05 08:56:39,116 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:56:39,116 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:56:40,930 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:56:40,930 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 107, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 120, in wrapper
+    for rota, metodo in allowed_routes:
+        ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2026-04-05 08:56:40,932 - INFO - 127.0.0.1 - - [05/Apr/2026 08:56:40] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 08:57:02,474 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:57:02,474 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:57:04,612 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:57:04,612 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 107, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 120, in wrapper
+    for rota, metodo in allowed_routes:
+        ^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+2026-04-05 08:57:04,626 - INFO - 127.0.0.1 - - [05/Apr/2026 08:57:04] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 08:58:40,520 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:58:40,520 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:58:42,245 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:58:42,245 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 08:58:42,245 - INFO - 127.0.0.1 - - [05/Apr/2026 08:58:42] "[31m[1mGET /teste HTTP/1.1[0m" 403 -
+2026-04-05 08:58:51,748 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:58:51,749 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 08:58:51,749 - INFO - 127.0.0.1 - - [05/Apr/2026 08:58:51] "[31m[1mPOST /teste HTTP/1.1[0m" 403 -
+2026-04-05 08:58:55,691 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:58:55,691 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 08:58:55,692 - INFO - 127.0.0.1 - - [05/Apr/2026 08:58:55] "[31m[1mPOST /teste HTTP/1.1[0m" 403 -
+2026-04-05 08:59:34,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:59:34,260 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:59:35,623 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:59:35,623 - ERROR - Exception on /teste [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1249, in make_response
+    raise TypeError(
+    ...<5 lines>...
+    )
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a dict_items.
+2026-04-05 08:59:35,625 - INFO - 127.0.0.1 - - [05/Apr/2026 08:59:35] "[35m[1mPOST /teste HTTP/1.1[0m" 500 -
+2026-04-05 08:59:54,014 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 08:59:54,014 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 08:59:55,906 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 08:59:55,906 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1249, in make_response
+    raise TypeError(
+    ...<5 lines>...
+    )
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a dict_items.
+2026-04-05 08:59:55,908 - INFO - 127.0.0.1 - - [05/Apr/2026 08:59:55] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 09:00:25,198 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 09:00:25,198 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 09:00:26,857 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:00:26,857 - INFO - 127.0.0.1 - - [05/Apr/2026 09:00:26] "GET /teste HTTP/1.1" 200 -
+2026-04-05 09:01:39,773 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 09:01:39,773 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 09:01:42,759 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:01:42,759 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 09:01:42,760 - INFO - 127.0.0.1 - - [05/Apr/2026 09:01:42] "[31m[1mGET /teste HTTP/1.1[0m" 403 -
+2026-04-05 09:01:45,856 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:01:45,856 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 09:01:45,856 - INFO - 127.0.0.1 - - [05/Apr/2026 09:01:45] "[31m[1mPOST /teste HTTP/1.1[0m" 403 -
+2026-04-05 09:02:06,404 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 09:02:06,404 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 09:02:07,792 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:02:07,793 - INFO - 127.0.0.1 - - [05/Apr/2026 09:02:07] "POST /teste HTTP/1.1" 200 -
+2026-04-05 09:02:11,352 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:02:11,352 - INFO - 127.0.0.1 - - [05/Apr/2026 09:02:11] "GET /teste HTTP/1.1" 200 -
+2026-04-05 09:03:06,574 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:03:06,574 - INFO - 127.0.0.1 - - [05/Apr/2026 09:03:06] "GET /teste HTTP/1.1" 200 -
+2026-04-05 09:03:36,756 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 09:03:36,756 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 09:03:39,221 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:03:39,221 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 09:03:39,221 - INFO - 127.0.0.1 - - [05/Apr/2026 09:03:39] "[31m[1mGET /teste HTTP/1.1[0m" 403 -
+2026-04-05 09:03:42,073 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:03:42,073 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 09:03:42,073 - INFO - 127.0.0.1 - - [05/Apr/2026 09:03:42] "[31m[1mPOST /teste HTTP/1.1[0m" 403 -
+2026-04-05 09:04:37,257 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 09:04:37,257 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 09:04:38,734 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:04:38,735 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 09:04:38,735 - INFO - 127.0.0.1 - - [05/Apr/2026 09:04:38] "[31m[1mPOST /teste HTTP/1.1[0m" 403 -
+2026-04-05 09:04:39,622 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:04:39,622 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 09:04:39,622 - INFO - 127.0.0.1 - - [05/Apr/2026 09:04:39] "[31m[1mPOST /teste HTTP/1.1[0m" 403 -
+2026-04-05 09:05:16,729 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 09:05:16,729 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 09:05:18,920 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:05:18,920 - INFO - 127.0.0.1 - - [05/Apr/2026 09:05:18] "POST /teste HTTP/1.1" 200 -
+2026-04-05 09:05:22,995 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:05:22,995 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 09:05:22,995 - INFO - 127.0.0.1 - - [05/Apr/2026 09:05:22] "[31m[1mGET /teste HTTP/1.1[0m" 403 -
+2026-04-05 09:05:32,165 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 09:05:32,165 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 09:05:33,755 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
+2026-04-05 09:05:33,755 - INFO - 127.0.0.1 - - [05/Apr/2026 09:05:33] "GET /teste HTTP/1.1" 200 -

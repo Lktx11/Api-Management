@@ -30,19 +30,22 @@ def get_lista_keys_ativas():
     request_lista_keys = Clientes.verKeysAtivas()
     return request_lista_keys
 
-@app.route('/hello', methods=['GET'])
-@api_key_required
-def hello_api():
-    return jsonify({
-        "status": "sucesso",
-        "mensagem" : "Api key funfando BOAAAAAAAAA"
-    })
-#TODO arrumar rate_limit
+#testes
+
 @app.route("/teste", methods=['GET'])
 @api_key_required
 @rate_limit_api
 @permission_required
 def teste():
-    return jsonify("teste")
+    return jsonify("GET")
+
+@app.route("/teste", methods=['POST'])
+@api_key_required
+@rate_limit_api
+@permission_required
+def testepost():
+    return jsonify("POST")
+
+        
 
         
