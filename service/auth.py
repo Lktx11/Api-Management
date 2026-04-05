@@ -2,7 +2,7 @@ from flask import g, jsonify, request
 import jwt
 import time
 import bcrypt
-import logging
+from logger import loggerInfo
 from middlewares.middlewares import error as Error
 from models.usuarios.usuarios import conectar
 cursor = conectar.cursor()
@@ -20,10 +20,9 @@ class Auth:
             senha_bytes = senha.encode("utf-8")
             senha_hash = bcrypt.hashpw(senha_bytes, bcrypt.gensalt())
             senha_db = senha_hash.decode("utf-8")
-            cursor.execute("INSERT INTO usuarios (cpf, senha) VALUES (?,?)", (dados['cpf'], senha_db))
+            cursor.execute("INSERT INTO usuarios (cpf, senha, window, rate_limit) VALUES (?, ?, ?, ?)", (dados['cpf'], senha_db, 60, 10))
             conectar.commit()
-            ip = request.remote_addr
-            logging.info(f"IP={ip} | Criou um usuario, cpf: {dados['cpf']}")
+            loggerInfo(f"Usuario registrado com sucesso, cpf: {dados['cpf']}")
             return jsonify({
                 "status" : "sucesso",
                 "mensagem" : "Usuario criado com sucesso!"
@@ -54,8 +53,7 @@ class Auth:
             return Error(("Senha incorreta!"), 401)
         g.cpf = dados['cpf']
         token = Auth.gerarToken(dados['cpf'])
-        ip = request.remote_addr
-        logging.info(f"IP={ip} | Usuario logou com sucesso, cpf: {dados['cpf']}")
+        loggerInfo(f"Usuario logou com sucesso, cpf: {dados['cpf']}")
         return jsonify({
             "status" : "sucesso",
             "mensagem" : "Logado com sucesso!",

@@ -1,22 +1,14 @@
 from flask import jsonify, request,g
 from models.clientes.clientes import conectar
+from models.usuarios.usuarios import conectar as conectar_usuarios
+from logger import loggerWarning
 from functools import wraps
+from logger import loggerWarning
 import time
 import json
-import logging
 import jwt
 cursor = conectar.cursor()
-logging.basicConfig(
-    filename="app.log",
-    level=logging.INFO,
-    format=("%(asctime)s - %(levelname)s - %(message)s")
-)
-
-def loggerWarning(mensagem):
-    ip = request.remote_addr
-    rota = request.path
-    metodo = request.method
-    logging.warning(f"Ip={ip} | Rota={rota} | Metodo = {metodo} | {mensagem}")
+cursor_usuarios = conectar_usuarios.cursor()
 
 def error(mensagem, codigo):
     return jsonify({
@@ -40,7 +32,7 @@ def token_required(func):
             return error(("Token expirado!"), 401)
         except jwt.InvalidTokenError:
             loggerWarning("Enviou um token invalido!")
-            return error(("Token invalido!"), 401)        
+            return error(("Token invalido!"), 401)       
         cpf = payload['cpf']
         g.cpf = cpf
         loggerWarning(f"CPF={cpf} | Enviou um token valido! ")
@@ -56,19 +48,18 @@ def api_key_required(func):
         if key == None:
             loggerWarning("Nao enviou uma key")
             return error(("Api key não enviada!"), 401)
-        cursor.execute("SELECT active, rate_limit, window, allowed_routes FROM clientes WHERE key = ?", (key, ))
+        cursor.execute("SELECT active, user_cpf FROM clientes WHERE key = ?", (key, ))
         key_dados = cursor.fetchone()
+        cpf = key_dados[1]
+        g.cpf = cpf
         if key_dados is None:
-            loggerWarning("Nao enviou uma key valida")
+            loggerWarning(f"Cpf={cpf} | Enviou uma key invalida")  
             return error(("Api key invalida!"), 401 )
-        if key_dados[0] == 0:
-            loggerWarning("Enviou uma key desativada")
+        if key_dados[0] == False:
+            loggerWarning(f"Cpf={cpf} | Enviou uma key desativada")
             return error(("Key desativada!"), 403)
-        loggerWarning(f"Key={key} | Utilizou sua key")
-        g.rate_limit = key_dados[1] or 10
-        g.window = key_dados[2] or 60
+        loggerWarning(f"Cpf={cpf} | Key={key} | Enviou uma key valida! ")
         g.key = key
-        g.allowed_routes = key_dados[3]
         return func(*args, **kwargs)
     return wrapper         
 
@@ -81,9 +72,13 @@ def rate_limit_api(func):
             metodo_chamado = request.method
             rota_chamada = request.path
             api_key = request.headers.get("X-API-KEY")
-            window = g.window
-            rate_limit = g.rate_limit
+            cursor_usuarios.execute("SELECT window, rate_limit, allowed_routes FROM usuarios WHERE cpf = ?", (g.cpf, ))
+            usuario_dados = cursor_usuarios.fetchone()
+            window = usuario_dados[0]
+            rate_limit = usuario_dados[1]
+            g.allowed_routes = usuario_dados[2]
             taxa = rate_limit/window
+
             if api_key not in rate:
                 rate[api_key] = {}
             if rota_chamada not in rate[api_key]:
@@ -111,13 +106,14 @@ def rate_limit_api(func):
 def permission_required(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
-        allowed_routes = json.loads(g.allowed_routes)
+        allowed_routes =g.allowed_routes
         if allowed_routes == None:
             return error(("Voce nao tem nenhuma permissao"), 403)
+        allowed_routes_json = json.loads(allowed_routes)
         rota_chamada = request.path
         metodo_chamado = request.method.upper()
         permitido = False
-        for rota, metodos in allowed_routes.items():
+        for rota, metodos in allowed_routes_json.items():
             if rota_chamada == rota or rota_chamada.startswith(rota + "/"):
                 if metodo_chamado in metodos:
                     permitido = True

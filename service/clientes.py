@@ -1,13 +1,17 @@
 import secrets
-from flask import jsonify
+from flask import jsonify,g
 from models.clientes.clientes import conectar
+from logger import loggerInfo
+import time
+agora = time.time()
 cursor = conectar.cursor()
 class Clientes:
-    def gerarApiKey(dados):
-        nome = dados['nome']
+    def gerarApiKey():
         key = secrets.token_hex(32)
-        cursor.execute("INSERT INTO clientes (app_name, key, active, rate_limit, window) VALUES (?,?,?,?,?)", (nome, key, 1, 10, 60))
+        cpf = g.cpf
+        cursor.execute("INSERT INTO clientes (user_cpf, key, active, created_at) VALUES (?,?,?,?)", (cpf, key, True, agora))
         conectar.commit()
+        loggerInfo(f"CPF={cpf} | Gerou uma nova API Key")
         return jsonify({
             "status" : "sucesso",
             "mensagem" : "Api Key gerada com sucesso!",
@@ -16,10 +20,11 @@ class Clientes:
         
     def verKeysAtivas():
         lista_keys = {}
-        cursor.execute("SELECT app_name, key FROM clientes WHERE active = ?", (1, ))
+        cursor.execute("SELECT key, created_at FROM clientes WHERE active = ? AND user_cpf = ?", (True, g.cpf))
         keys_ativas = cursor.fetchall()
-        for app, key in keys_ativas:
-            lista_keys[app] = key
+        for key, created_at in keys_ativas:
+            lista_keys[key] = created_at
+        loggerInfo(f"CPF={g.cpf} | Listou suas API Keys ativas")
         return jsonify({
             "status" : "sucesso",
             "keys" : lista_keys

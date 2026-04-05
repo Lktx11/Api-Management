@@ -1481,3 +1481,430 @@ TypeError: The view function did not return a valid response. The return type mu
 2026-04-05 09:05:32,165 - INFO - [33mPress CTRL+C to quit[0m
 2026-04-05 09:05:33,755 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=b0ffd4d7938533eea54477711671185fcfcfb4e1cde4ad80cefc93d6ee8ae400 | Utilizou sua key
 2026-04-05 09:05:33,755 - INFO - 127.0.0.1 - - [05/Apr/2026 09:05:33] "GET /teste HTTP/1.1" 200 -
+2026-04-05 17:01:53,842 - WARNING - Ip=None | Rota=/teste | Metodo = POST | Key=test-key | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 17:02:02,710 - WARNING - Ip=None | Rota=/teste | Metodo = POST | Key=test-key | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 17:37:38,242 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:37:38,242 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:38:53,367 - ERROR - Exception on /registrar [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 11, in post_registrar_usuario
+    request_registrar = Auth.registrar(dados)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\auth.py", line 25, in registrar
+    loggerInfo(f"Usuario registrado com sucesso, cpf: {dados['cpf']}")
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\logger.py", line 21, in loggerInfo
+    tempo_resposta = time.time() - g.start_time
+                                   ^^^^^^^^^^^^
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\ctx.py", line 56, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: start_time
+2026-04-05 17:38:53,370 - INFO - 127.0.0.1 - - [05/Apr/2026 17:38:53] "[35m[1mPOST /registrar HTTP/1.1[0m" 500 -
+2026-04-05 17:39:45,052 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:39:45,053 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:39:48,219 - ERROR - Exception on /registrar [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 11, in post_registrar_usuario
+    request_registrar = Auth.registrar(dados)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\auth.py", line 23, in registrar
+    cursor.execute("INSERT INTO usuarios (cpf, senha, window, rate_limit) VALUES (?, ?, ?, ?)", (dados['cpf'], senha_db, 60, 10))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: usuarios.cpf
+2026-04-05 17:39:48,222 - INFO - 127.0.0.1 - - [05/Apr/2026 17:39:48] "[35m[1mPOST /registrar HTTP/1.1[0m" 500 -
+2026-04-05 17:40:22,206 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:40:22,206 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:40:25,216 - INFO - Ip=127.0.0.1 | Rota=/registrar | Metodo = POST | Tempo de resposta = 3.03s | Usuario registrado com sucesso, cpf: 124
+2026-04-05 17:40:25,216 - INFO - 127.0.0.1 - - [05/Apr/2026 17:40:25] "[35m[1mPOST /registrar HTTP/1.1[0m" 201 -
+2026-04-05 17:40:55,485 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Tempo de resposta = 33.30s | Usuario logou com sucesso, cpf: 123
+2026-04-05 17:40:55,485 - INFO - 127.0.0.1 - - [05/Apr/2026 17:40:55] "POST /login HTTP/1.1" 200 -
+2026-04-05 17:40:58,214 - INFO - 127.0.0.1 - - [05/Apr/2026 17:40:58] "[33mPOST /login HTTP/1.1[0m" 404 -
+2026-04-05 17:41:02,649 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Tempo de resposta = 40.46s | Usuario logou com sucesso, cpf: 123
+2026-04-05 17:41:02,649 - INFO - 127.0.0.1 - - [05/Apr/2026 17:41:02] "POST /login HTTP/1.1" 200 -
+2026-04-05 17:41:05,066 - INFO - 127.0.0.1 - - [05/Apr/2026 17:41:05] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-04-05 17:41:09,547 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Tempo de resposta = 47.36s | Usuario logou com sucesso, cpf: 123
+2026-04-05 17:41:09,547 - INFO - 127.0.0.1 - - [05/Apr/2026 17:41:09] "POST /login HTTP/1.1" 200 -
+2026-04-05 17:41:56,964 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | CPF=123 | Enviou um token valido! 
+2026-04-05 17:41:56,964 - ERROR - Exception on /key [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 36, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 23, in post_criar_key
+    request_criar_key = Clientes.gerarApiKey()
+TypeError: Clientes.gerarApiKey() missing 1 required positional argument: 'dados'
+2026-04-05 17:41:56,966 - INFO - 127.0.0.1 - - [05/Apr/2026 17:41:56] "[35m[1mPOST /key HTTP/1.1[0m" 500 -
+2026-04-05 17:42:01,372 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:42:01,372 - INFO - 127.0.0.1 - - [05/Apr/2026 17:42:01] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:42:10,633 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:42:10,634 - INFO - 127.0.0.1 - - [05/Apr/2026 17:42:10] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:42:19,258 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:42:19,258 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:42:42,129 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Tempo de resposta = 22.89s | Usuario logou com sucesso, cpf: 123
+2026-04-05 17:42:42,130 - INFO - 127.0.0.1 - - [05/Apr/2026 17:42:42] "POST /login HTTP/1.1" 200 -
+2026-04-05 17:43:33,260 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:43:33,260 - INFO - 127.0.0.1 - - [05/Apr/2026 17:43:33] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:44:41,993 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:44:41,993 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:44:44,459 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:44:44,459 - INFO - 127.0.0.1 - - [05/Apr/2026 17:44:44] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:44:56,102 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:44:56,102 - INFO - 127.0.0.1 - - [05/Apr/2026 17:44:56] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:45:01,866 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Nao enviou um token
+2026-04-05 17:45:01,866 - INFO - 127.0.0.1 - - [05/Apr/2026 17:45:01] "[31m[1mPOST /key?token=eyJhbGciOiJIUzI1NiJ9.e30.dPLq-X6ap7gMSvDruJRcGoftOLbQqcIJbly82vLueeM HTTP/1.1[0m" 400 -
+2026-04-05 17:45:05,323 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:45:05,324 - INFO - 127.0.0.1 - - [05/Apr/2026 17:45:05] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:46:27,352 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:46:27,352 - INFO - 127.0.0.1 - - [05/Apr/2026 17:46:27] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:46:34,229 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Enviou um token invalido!
+2026-04-05 17:46:34,229 - INFO - 127.0.0.1 - - [05/Apr/2026 17:46:34] "[31m[1mPOST /key HTTP/1.1[0m" 401 -
+2026-04-05 17:46:38,108 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = POST | CPF=123 | Enviou um token valido! 
+2026-04-05 17:46:38,210 - INFO - Ip=127.0.0.1 | Rota=/key | Metodo = POST | Tempo de resposta = 116.25s | CPF=123 | Gerou uma nova API Key
+2026-04-05 17:46:38,211 - INFO - 127.0.0.1 - - [05/Apr/2026 17:46:38] "POST /key HTTP/1.1" 200 -
+2026-04-05 17:47:20,643 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | Nao enviou um token
+2026-04-05 17:47:20,643 - INFO - 127.0.0.1 - - [05/Apr/2026 17:47:20] "[31m[1mGET /key HTTP/1.1[0m" 400 -
+2026-04-05 17:47:31,333 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | Enviou um token invalido!
+2026-04-05 17:47:31,333 - INFO - 127.0.0.1 - - [05/Apr/2026 17:47:31] "[31m[1mGET /key HTTP/1.1[0m" 401 -
+2026-04-05 17:47:36,099 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:47:36,100 - ERROR - Exception on /key [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 36, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 30, in get_lista_keys_ativas
+    request_lista_keys = Clientes.verKeysAtivas()
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\clientes.py", line 25, in verKeysAtivas
+    for app, dados in keys_ativas:
+        ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2, got 4)
+2026-04-05 17:47:36,103 - INFO - 127.0.0.1 - - [05/Apr/2026 17:47:36] "[35m[1mGET /key HTTP/1.1[0m" 500 -
+2026-04-05 17:47:38,852 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:47:38,852 - ERROR - Exception on /key [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 36, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 30, in get_lista_keys_ativas
+    request_lista_keys = Clientes.verKeysAtivas()
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\clientes.py", line 25, in verKeysAtivas
+    for app, dados in keys_ativas:
+        ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2, got 4)
+2026-04-05 17:47:38,853 - INFO - 127.0.0.1 - - [05/Apr/2026 17:47:38] "[35m[1mGET /key HTTP/1.1[0m" 500 -
+2026-04-05 17:47:43,565 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:47:43,565 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:48:00,210 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Tempo de resposta = 16.69s | Usuario logou com sucesso, cpf: 123
+2026-04-05 17:48:00,211 - INFO - 127.0.0.1 - - [05/Apr/2026 17:48:00] "POST /login HTTP/1.1" 200 -
+2026-04-05 17:48:38,088 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:48:38,088 - ERROR - Exception on /key [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 36, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 30, in get_lista_keys_ativas
+    request_lista_keys = Clientes.verKeysAtivas()
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\clientes.py", line 25, in verKeysAtivas
+    for app, dados in keys_ativas:
+        ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2, got 4)
+2026-04-05 17:48:38,090 - INFO - 127.0.0.1 - - [05/Apr/2026 17:48:38] "[35m[1mGET /key HTTP/1.1[0m" 500 -
+2026-04-05 17:50:30,661 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:50:30,661 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:50:32,448 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:50:32,449 - ERROR - Exception on /key [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 36, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 30, in get_lista_keys_ativas
+    request_lista_keys = Clientes.verKeysAtivas()
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\clientes.py", line 25, in verKeysAtivas
+    for key, dados in keys_ativas:
+        ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2, got 4)
+2026-04-05 17:50:32,451 - INFO - 127.0.0.1 - - [05/Apr/2026 17:50:32] "[35m[1mGET /key HTTP/1.1[0m" 500 -
+2026-04-05 17:50:36,960 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:50:36,961 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:50:39,242 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:50:39,242 - ERROR - Exception on /key [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 36, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 30, in get_lista_keys_ativas
+    request_lista_keys = Clientes.verKeysAtivas()
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\clientes.py", line 25, in verKeysAtivas
+    for key, dados in keys_ativas:
+        ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2, got 4)
+2026-04-05 17:50:39,245 - INFO - 127.0.0.1 - - [05/Apr/2026 17:50:39] "[35m[1mGET /key HTTP/1.1[0m" 500 -
+2026-04-05 17:51:00,832 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:51:00,832 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:51:02,163 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:51:02,164 - ERROR - Exception on /key [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 36, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\routes\routes.py", line 30, in get_lista_keys_ativas
+    request_lista_keys = Clientes.verKeysAtivas()
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\service\clientes.py", line 26, in verKeysAtivas
+    "cpf" : dados[0],
+            ^^^^^
+UnboundLocalError: cannot access local variable 'dados' where it is not associated with a value
+2026-04-05 17:51:02,166 - INFO - 127.0.0.1 - - [05/Apr/2026 17:51:02] "[35m[1mGET /key HTTP/1.1[0m" 500 -
+2026-04-05 17:51:44,089 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:51:44,089 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:51:45,311 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:51:45,311 - INFO - 127.0.0.1 - - [05/Apr/2026 17:51:45] "GET /key HTTP/1.1" 200 -
+2026-04-05 17:52:58,361 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:52:58,362 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:52:59,662 - WARNING - Ip=127.0.0.1 | Rota=/key | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-05 17:52:59,663 - INFO - Ip=127.0.0.1 | Rota=/key | Metodo = GET | Tempo de resposta = 1.34s | CPF=123 | Listou suas API Keys ativas
+2026-04-05 17:52:59,663 - INFO - 127.0.0.1 - - [05/Apr/2026 17:52:59] "GET /key HTTP/1.1" 200 -
+2026-04-05 17:53:51,384 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 48, in wrapper
+    cursor.execute("SELECT active, rate_limit, window, allowed_routes FROM clientes WHERE key = ?", (key, ))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: rate_limit
+2026-04-05 17:53:51,386 - INFO - 127.0.0.1 - - [05/Apr/2026 17:53:51] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 17:54:03,474 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:54:03,474 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:54:05,201 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 48, in wrapper
+    cursor.execute("SELECT active, rate_limit, window, allowed_routes FROM clientes WHERE key = ?", (key, ))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: rate_limit
+2026-04-05 17:54:05,203 - INFO - 127.0.0.1 - - [05/Apr/2026 17:54:05] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 17:55:49,556 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:55:49,556 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:55:50,811 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Utilizou sua key
+2026-04-05 17:55:50,812 - ERROR - Exception on /teste [GET]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 57, in wrapper
+    g.rate_limit = key_dados[1] or 10
+                   ~~~~~~~~~^^^
+IndexError: tuple index out of range
+2026-04-05 17:55:50,813 - INFO - 127.0.0.1 - - [05/Apr/2026 17:55:50] "[35m[1mGET /teste HTTP/1.1[0m" 500 -
+2026-04-05 17:56:21,822 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 17:56:21,822 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:56:23,505 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Utilizou sua key
+2026-04-05 17:56:23,505 - INFO - 127.0.0.1 - - [05/Apr/2026 17:56:23] "GET /teste HTTP/1.1" 200 -
+2026-04-05 17:56:31,332 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Utilizou sua key
+2026-04-05 17:56:31,332 - ERROR - Exception on /teste [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 70, in wrapper
+    window = g.window
+             ^^^^^^^^
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\ctx.py", line 56, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: window
+2026-04-05 17:56:31,334 - INFO - 127.0.0.1 - - [05/Apr/2026 17:56:31] "[35m[1mPOST /teste HTTP/1.1[0m" 500 -
+2026-04-05 18:01:06,523 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 18:01:06,525 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 18:01:08,132 - ERROR - Exception on /teste [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 51, in wrapper
+    cursor.execute("SELECT active, cpf FROM clientes WHERE key = ?", (key, ))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: cpf
+2026-04-05 18:01:08,134 - INFO - 127.0.0.1 - - [05/Apr/2026 18:01:08] "[35m[1mPOST /teste HTTP/1.1[0m" 500 -
+2026-04-05 18:01:32,508 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 18:01:32,509 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 18:01:33,712 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Cpf=123 | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Enviou uma key valida! 
+2026-04-05 18:01:33,712 - ERROR - Exception on /teste [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 63, in wrapper
+    return func(*args, **kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 102, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 109, in wrapper
+    allowed_routes = json.loads(g.allowed_routes)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 345, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+                    f'not {s.__class__.__name__}')
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2026-04-05 18:01:33,715 - INFO - 127.0.0.1 - - [05/Apr/2026 18:01:33] "[35m[1mPOST /teste HTTP/1.1[0m" 500 -
+2026-04-05 18:02:20,635 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 18:02:20,635 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 18:02:22,674 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Cpf=123 | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Enviou uma key valida! 
+2026-04-05 18:02:22,674 - ERROR - Exception on /teste [POST]
+Traceback (most recent call last):
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lucca\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 63, in wrapper
+    return func(*args, **kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 102, in wrapper
+    return func(*args,**kwargs)
+  File "E:\Arquivos\Estudos\API\Api Keys - Management\middlewares\middlewares.py", line 109, in wrapper
+    if allowed_routes == None:
+       ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'allowed_routes' where it is not associated with a value
+2026-04-05 18:02:22,676 - INFO - 127.0.0.1 - - [05/Apr/2026 18:02:22] "[35m[1mPOST /teste HTTP/1.1[0m" 500 -
+2026-04-05 18:03:04,837 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 18:03:04,837 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 18:03:05,887 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Cpf=123 | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Enviou uma key valida! 
+2026-04-05 18:03:05,888 - INFO - 127.0.0.1 - - [05/Apr/2026 18:03:05] "[31m[1mPOST /teste HTTP/1.1[0m" 403 -
+2026-04-05 18:04:08,272 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-05 18:04:08,272 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 18:04:09,854 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = POST | Cpf=123 | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Enviou uma key valida! 
+2026-04-05 18:04:09,854 - INFO - 127.0.0.1 - - [05/Apr/2026 18:04:09] "POST /teste HTTP/1.1" 200 -
+2026-04-05 18:04:12,927 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Cpf=123 | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Enviou uma key valida! 
+2026-04-05 18:04:12,927 - WARNING - Ip=127.0.0.1 | Rota=/teste | Metodo = GET | Key=0e74c2a590b9868ae9784e4f68c43311baca30c8a9922c600daeab1bc4f2fd64 | Tentou acessar uma rota que nao possui permissao 
+2026-04-05 18:04:12,927 - INFO - 127.0.0.1 - - [05/Apr/2026 18:04:12] "[31m[1mGET /teste HTTP/1.1[0m" 403 -

@@ -16,12 +16,12 @@ def post_login_usuario():
     dados = request.get_json()
     request_login = Auth.login(dados)
     return request_login
+
 #keys
 @app.route("/key", methods=['POST'])
 @token_required
 def post_criar_key():
-    dados = request.get_json()
-    request_criar_key = Clientes.gerarApiKey(dados)
+    request_criar_key = Clientes.gerarApiKey()
     return request_criar_key
 
 @app.route("/key", methods=['GET'])
