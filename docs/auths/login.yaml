@@ -1,0 +1,74 @@
+summary: Login de usuário
+description: Autentica um usuário usando CPF e senha, retornando um token de acesso.
+
+parameters:
+  - in: body
+    name: body
+    description: Dados necessários para autenticar um usuário
+    required: true
+    schema:
+      type: object
+      required:
+        - cpf
+        - senha
+      properties:
+        cpf:
+          type: string
+          description: CPF do usuário
+        senha:
+          type: string
+          description: Senha da conta
+      example:
+        cpf: "12345678900"
+        senha: "senhaSegura123"
+
+responses:
+  200:
+    description: Autenticação bem-sucedida
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            token:
+              type: string
+              description: Token de acesso JWT
+        example:
+          token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+
+  400:
+    description: Dados de autenticação inválidos
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            erro:
+              type: string
+              description: Mensagem de erro detalhada
+        example:
+          erro: "CPF ou senha inválidos"
+  401:
+    description: Não autorizado
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            erro:
+              type: string
+              description: Mensagem de erro detalhada
+        example:
+          erro: "Senha incorreta"
+  404:
+    description: Usuário não encontrado
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            erro:
+              type: string
+              description: Mensagem de erro detalhada
+        example:
+          erro: "Usuário não encontrado"

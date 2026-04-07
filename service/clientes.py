@@ -1,8 +1,9 @@
 import secrets
 from flask import jsonify,g
 from models.clientes.clientes import conectar
-from logger import loggerInfo
+from utils.logger import loggerInfo
 import time
+import json
 agora = time.time()
 cursor = conectar.cursor()
 class Clientes:
@@ -16,7 +17,7 @@ class Clientes:
             "status" : "sucesso",
             "mensagem" : "Api Key gerada com sucesso!",
             "key" : key
-        })
+        }), 201
         
     def verKeysAtivas():
         lista_keys = {}
@@ -31,4 +32,29 @@ class Clientes:
             })
         
         
-        
+    def desativarKey(dados):
+        cpf = g.cpf
+        if not dados:
+            return jsonify({
+                "status" : "erro",
+                "mensagem" : "Json nao enviado!"
+            }), 400
+        if "key" not in dados:
+            return jsonify({
+                "status" : "erro",
+                "mensagem" : "A key esta faltando!"
+            }), 400
+        cursor.execute("SELECT key FROM clientes WHERE user_cpf = ?",(cpf, ))
+        keys_usuario = cursor.fetchall()
+        if dados['key'] not in [key[0] for key in keys_usuario]:
+            return jsonify({
+                "status" : "erro",
+                "mensagem" : "Key não encontrada!"
+            }), 404
+        cursor.execute("UPDATE clientes SET active = ? WHERE key = ?", (False, dados['key']))
+        conectar.commit()
+        loggerInfo(f"CPF={cpf} | Desativou uma API Key({dados['key']})")
+        return jsonify({
+            "status" : "sucesso",
+            "mensagem" : "Key desativada com sucesso!"
+        })

@@ -1,9 +1,9 @@
 from flask import jsonify, request,g
 from models.clientes.clientes import conectar
 from models.usuarios.usuarios import conectar as conectar_usuarios
-from logger import loggerWarning
+from utils.logger import loggerWarning
 from functools import wraps
-from logger import loggerWarning
+from utils.logger import loggerWarning
 import time
 import json
 import jwt
@@ -17,6 +17,7 @@ def error(mensagem, codigo):
     }), codigo
     
     
+
 def token_required(func):
     @wraps(func)
     def wrapper(*args, **kwargs):

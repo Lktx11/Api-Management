@@ -1,8 +1,9 @@
 from flask import g, jsonify, request
 import jwt
 import time
+import sqlite3
 import bcrypt
-from logger import loggerInfo
+from utils.logger import loggerInfo
 from middlewares.middlewares import error as Error
 from models.usuarios.usuarios import conectar
 cursor = conectar.cursor()
@@ -13,20 +14,25 @@ class Auth:
             if not dados:
                 Error(("Json nao enviado!"), 400)
             if "cpf" not in dados:
-                Error(("Cpf esta faltando!"), 400)
+                return Error(("Cpf esta faltando!"), 400)
             if "senha" not in dados:
-                Error(("A senha esta faltando!"), 400)
-            senha = dados['senha']
-            senha_bytes = senha.encode("utf-8")
-            senha_hash = bcrypt.hashpw(senha_bytes, bcrypt.gensalt())
-            senha_db = senha_hash.decode("utf-8")
-            cursor.execute("INSERT INTO usuarios (cpf, senha, window, rate_limit) VALUES (?, ?, ?, ?)", (dados['cpf'], senha_db, 60, 10))
-            conectar.commit()
-            loggerInfo(f"Usuario registrado com sucesso, cpf: {dados['cpf']}")
-            return jsonify({
-                "status" : "sucesso",
-                "mensagem" : "Usuario criado com sucesso!"
-            }), 201
+                return Error(("A senha esta faltando!"), 400)
+            if dados['senha'] == "" or dados['cpf'] == "":
+                return Error(("Cpf ou senha não podem ser vazios!"), 400)
+            try:
+                senha = dados['senha']  
+                senha_bytes = senha.encode("utf-8")
+                senha_hash = bcrypt.hashpw(senha_bytes, bcrypt.gensalt())
+                senha_db = senha_hash.decode("utf-8")
+                cursor.execute("INSERT INTO usuarios (cpf, senha, window, rate_limit) VALUES (?, ?, ?, ?)", (dados['cpf'], senha_db, 60, 10))
+                conectar.commit()
+                loggerInfo(f"Usuario registrado com sucesso, cpf: {dados['cpf']}")
+                return jsonify({
+                    "status" : "sucesso",
+                    "mensagem" : "Usuario criado com sucesso!"
+                }), 201
+            except sqlite3.IntegrityError:
+                return Error(("Cpf já registrado!"), 409)
     
     def gerarToken(cpf):
         agora = time.time()
@@ -58,4 +64,4 @@ class Auth:
             "status" : "sucesso",
             "mensagem" : "Logado com sucesso!",
             "token" : token
-        })
+        }), 200
