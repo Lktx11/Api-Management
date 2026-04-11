@@ -7011,3 +7011,1507 @@ yaml.scanner.ScannerError: mapping values are not allowed here
 2026-04-07 20:47:21,684 - INFO -  * Restarting with stat
 2026-04-07 20:47:22,062 - WARNING -  * Debugger is active!
 2026-04-07 20:47:22,065 - INFO -  * Debugger PIN: 813-969-918
+2026-04-07 20:50:56,037 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-07 20:50:56,038 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-07 20:50:56,039 - INFO -  * Restarting with stat
+2026-04-07 20:50:56,376 - WARNING -  * Debugger is active!
+2026-04-07 20:50:56,378 - INFO -  * Debugger PIN: 813-969-918
+2026-04-07 20:50:58,696 - INFO - 127.0.0.1 - - [07/Apr/2026 20:50:58] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-07 20:50:58,759 - INFO - 127.0.0.1 - - [07/Apr/2026 20:50:58] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-07 20:50:58,760 - INFO - 127.0.0.1 - - [07/Apr/2026 20:50:58] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-07 20:50:58,765 - INFO - 127.0.0.1 - - [07/Apr/2026 20:50:58] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-07 20:50:58,767 - INFO - 127.0.0.1 - - [07/Apr/2026 20:50:58] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-07 20:50:58,886 - INFO - 127.0.0.1 - - [07/Apr/2026 20:50:58] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-07 20:50:58,888 - INFO - 127.0.0.1 - - [07/Apr/2026 20:50:58] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-07 20:51:00,829 - INFO - 127.0.0.1 - - [07/Apr/2026 20:51:00] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-07 20:51:00,851 - INFO - 127.0.0.1 - - [07/Apr/2026 20:51:00] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-07 20:51:00,852 - INFO - 127.0.0.1 - - [07/Apr/2026 20:51:00] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-07 20:51:00,852 - INFO - 127.0.0.1 - - [07/Apr/2026 20:51:00] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-07 20:51:00,853 - INFO - 127.0.0.1 - - [07/Apr/2026 20:51:00] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-07 20:51:00,911 - INFO - 127.0.0.1 - - [07/Apr/2026 20:51:00] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-07 20:51:00,920 - INFO - 127.0.0.1 - - [07/Apr/2026 20:51:00] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:10:42,747 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:10:42,755 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:10:42,767 - INFO -  * Restarting with stat
+2026-04-08 13:10:44,037 - WARNING -  * Debugger is active!
+2026-04-08 13:10:44,051 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:11:37,636 - INFO - 127.0.0.1 - - [08/Apr/2026 13:11:37] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:11:38,006 - INFO - 127.0.0.1 - - [08/Apr/2026 13:11:38] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2026-04-08 13:11:38,008 - INFO - 127.0.0.1 - - [08/Apr/2026 13:11:38] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2026-04-08 13:11:38,012 - INFO - 127.0.0.1 - - [08/Apr/2026 13:11:38] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2026-04-08 13:11:38,017 - INFO - 127.0.0.1 - - [08/Apr/2026 13:11:38] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2026-04-08 13:11:38,234 - INFO - 127.0.0.1 - - [08/Apr/2026 13:11:38] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2026-04-08 13:11:38,277 - INFO - 127.0.0.1 - - [08/Apr/2026 13:11:38] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:15:52,812 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\app.py', reloading
+2026-04-08 13:15:52,959 - INFO -  * Restarting with stat
+2026-04-08 13:15:54,433 - WARNING -  * Debugger is active!
+2026-04-08 13:15:54,446 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:16:00,667 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-08 13:16:00,800 - INFO -  * Restarting with stat
+2026-04-08 13:16:01,449 - WARNING -  * Debugger is active!
+2026-04-08 13:16:01,458 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:16:08,862 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-08 13:16:08,997 - INFO -  * Restarting with stat
+2026-04-08 13:16:10,231 - WARNING -  * Debugger is active!
+2026-04-08 13:16:10,239 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:17:36,202 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-08 13:17:36,323 - INFO -  * Restarting with stat
+2026-04-08 13:17:37,595 - WARNING -  * Debugger is active!
+2026-04-08 13:17:37,605 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:23:18,089 - INFO - 127.0.0.1 - - [08/Apr/2026 13:23:18] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:23:18,330 - INFO - 127.0.0.1 - - [08/Apr/2026 13:23:18] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:23:18,358 - INFO - 127.0.0.1 - - [08/Apr/2026 13:23:18] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:23:18,377 - INFO - 127.0.0.1 - - [08/Apr/2026 13:23:18] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:23:18,381 - INFO - 127.0.0.1 - - [08/Apr/2026 13:23:18] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:23:18,582 - INFO - 127.0.0.1 - - [08/Apr/2026 13:23:18] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:23:18,649 - INFO - 127.0.0.1 - - [08/Apr/2026 13:23:18] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:24:19,449 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:19] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:24:19,475 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:19] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:24:19,487 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:19] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:24:19,487 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:19] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:24:19,488 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:19] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:24:19,582 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:19] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:24:19,611 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:19] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:24:46,056 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:46] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:24:46,086 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:46] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:24:46,090 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:46] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:24:46,093 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:46] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:24:46,097 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:46] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:24:46,178 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:46] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:24:46,205 - INFO - 127.0.0.1 - - [08/Apr/2026 13:24:46] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:28:26,700 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:26] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:28:26,723 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:26] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:28:26,740 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:26] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:26,740 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:26] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:26,741 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:26] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:26,826 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:26] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:28:26,904 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 30, column 22:
+              mensagem: "Key desativada com sucesso!"
+                         ^
+2026-04-08 13:28:27,130 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:27] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:28:28,094 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:28] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:28:28,122 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:28] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:28:28,134 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:28] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:28,137 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:28] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:28,142 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:28] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:28,228 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:28] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:28:28,253 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 30, column 22:
+              mensagem: "Key desativada com sucesso!"
+                         ^
+2026-04-08 13:28:28,326 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:28] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:28:44,256 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:44] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:28:44,284 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:44] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:28:44,289 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:44] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:44,290 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:44] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:44,293 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:44] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:44,383 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:44] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:28:44,405 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 29, column 15:
+        example: "Key desativada com sucesso!"
+                  ^
+2026-04-08 13:28:44,478 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:44] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:28:54,268 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:54] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:28:54,295 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:54] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:28:54,301 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:54] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:54,302 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:54] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:54,303 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:54] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:28:54,385 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:54] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:28:54,407 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 52, column 18:
+              erro: "Key não encontrada"
+                     ^
+2026-04-08 13:28:54,485 - INFO - 127.0.0.1 - - [08/Apr/2026 13:28:54] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:29:02,319 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:29:02,321 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:29:02,323 - INFO -  * Restarting with stat
+2026-04-08 13:29:04,105 - WARNING -  * Debugger is active!
+2026-04-08 13:29:04,117 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:29:04,347 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:04] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:29:04,608 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:04] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:04,624 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:04] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:29:04,659 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:04] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:04,668 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:04] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:04,751 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:04] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:29:04,774 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 52, column 18:
+              erro: "Key não encontrada"
+                     ^
+2026-04-08 13:29:04,853 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:04] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:29:06,131 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:06] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:29:06,162 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:06] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:29:06,172 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:06] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:06,173 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:06] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:06,174 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:06] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:06,273 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 52, column 18:
+              erro: "Key não encontrada"
+                     ^
+2026-04-08 13:29:06,341 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:06] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:29:20,266 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:20] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:29:20,297 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:20] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:29:20,304 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:20] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:20,308 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:20] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:20,310 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:20] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:29:20,402 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:20] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:29:20,423 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 52, column 18:
+              erro: "Key não encontrada"
+                     ^
+2026-04-08 13:29:20,511 - INFO - 127.0.0.1 - - [08/Apr/2026 13:29:20] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:30:27,317 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:30:27,322 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:30:27,334 - INFO -  * Restarting with stat
+2026-04-08 13:30:28,093 - WARNING -  * Debugger is active!
+2026-04-08 13:30:28,102 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:30:29,596 - INFO - 127.0.0.1 - - [08/Apr/2026 13:30:29] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:30:29,812 - INFO - 127.0.0.1 - - [08/Apr/2026 13:30:29] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:30:29,900 - INFO - 127.0.0.1 - - [08/Apr/2026 13:30:29] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:30:29,901 - INFO - 127.0.0.1 - - [08/Apr/2026 13:30:29] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:30:29,916 - INFO - 127.0.0.1 - - [08/Apr/2026 13:30:29] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:30:29,988 - INFO - 127.0.0.1 - - [08/Apr/2026 13:30:29] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:30:30,008 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 52, column 18:
+              erro: "Key não encontrada"
+                     ^
+2026-04-08 13:30:30,092 - INFO - 127.0.0.1 - - [08/Apr/2026 13:30:30] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:31:00,685 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:31:00,687 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:31:00,690 - INFO -  * Restarting with stat
+2026-04-08 13:31:01,384 - WARNING -  * Debugger is active!
+2026-04-08 13:31:01,393 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:31:01,623 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:01] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:31:02,006 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:02] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:31:02,008 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:02] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:02,020 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:02] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:02,027 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:02] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:02,096 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:02] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:31:02,111 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 17, column 11:
+              type: string
+              ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 52, column 18:
+              erro: "Key não encontrada"
+                     ^
+2026-04-08 13:31:02,183 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:02] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:31:20,117 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:20] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:31:20,145 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:20] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:31:20,151 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:20] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:20,154 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:20] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:20,157 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:20] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:20,237 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:20] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:31:20,272 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 64, in compose_node
+    if self.check_event(AliasEvent):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 449, in parse_block_mapping_value
+    if not self.check_token(KeyToken, ValueToken, BlockEndToken):
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 251, in fetch_more_tokens
+    return self.fetch_double()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 655, in fetch_double
+    self.fetch_flow_scalar(style='"')
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 666, in fetch_flow_scalar
+    self.tokens.append(self.scan_flow_scalar(style))
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 1151, in scan_flow_scalar
+    chunks.extend(self.scan_flow_scalar_spaces(double, start_mark))
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 1238, in scan_flow_scalar_spaces
+    raise ScannerError("while scanning a quoted scalar", start_mark,
+            "found unexpected end of stream", self.get_mark())
+yaml.scanner.ScannerError: while scanning a quoted scalar
+  in "<unicode string>", line 19, column 20:
+              example: "123e4567-e89b-12d3-a456-426
+                       ^
+found unexpected end of stream
+  in "<unicode string>", line 19, column 48:
+     ... le: "123e4567-e89b-12d3-a456-426
+                                         ^
+2026-04-08 13:31:20,373 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:20] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:31:30,358 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:31:30,359 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:31:30,361 - INFO -  * Restarting with stat
+2026-04-08 13:31:30,995 - WARNING -  * Debugger is active!
+2026-04-08 13:31:31,005 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:31:31,813 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:31] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:31:32,067 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:32] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:31:32,101 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:32] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:32,107 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:32] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:32,114 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:32] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:32,183 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:32] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:31:32,207 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 64, in compose_node
+    if self.check_event(AliasEvent):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 449, in parse_block_mapping_value
+    if not self.check_token(KeyToken, ValueToken, BlockEndToken):
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 251, in fetch_more_tokens
+    return self.fetch_double()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 655, in fetch_double
+    self.fetch_flow_scalar(style='"')
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 666, in fetch_flow_scalar
+    self.tokens.append(self.scan_flow_scalar(style))
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 1151, in scan_flow_scalar
+    chunks.extend(self.scan_flow_scalar_spaces(double, start_mark))
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\scanner.py", line 1238, in scan_flow_scalar_spaces
+    raise ScannerError("while scanning a quoted scalar", start_mark,
+            "found unexpected end of stream", self.get_mark())
+yaml.scanner.ScannerError: while scanning a quoted scalar
+  in "<unicode string>", line 19, column 20:
+              example: "123e4567-e89b-12d3-a456-426
+                       ^
+found unexpected end of stream
+  in "<unicode string>", line 19, column 48:
+     ... le: "123e4567-e89b-12d3-a456-426
+                                         ^
+2026-04-08 13:31:32,289 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:32] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:31:45,286 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:31:45,287 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:31:45,289 - INFO -  * Restarting with stat
+2026-04-08 13:31:45,931 - WARNING -  * Debugger is active!
+2026-04-08 13:31:45,939 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:31:46,141 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:46] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:31:46,370 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:46] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:31:46,402 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:46] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:46,416 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:46] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:46,423 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:46] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:31:46,487 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:46] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:31:46,524 - INFO - 127.0.0.1 - - [08/Apr/2026 13:31:46] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:32:33,923 - INFO - 127.0.0.1 - - [08/Apr/2026 13:32:33] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:32:33,950 - INFO - 127.0.0.1 - - [08/Apr/2026 13:32:33] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:32:33,953 - INFO - 127.0.0.1 - - [08/Apr/2026 13:32:33] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:32:33,964 - INFO - 127.0.0.1 - - [08/Apr/2026 13:32:33] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:32:33,974 - INFO - 127.0.0.1 - - [08/Apr/2026 13:32:33] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:32:34,053 - INFO - 127.0.0.1 - - [08/Apr/2026 13:32:34] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:32:34,081 - INFO - 127.0.0.1 - - [08/Apr/2026 13:32:34] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:33:15,439 - INFO - 127.0.0.1 - - [08/Apr/2026 13:33:15] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:33:15,467 - INFO - 127.0.0.1 - - [08/Apr/2026 13:33:15] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:33:15,487 - INFO - 127.0.0.1 - - [08/Apr/2026 13:33:15] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:33:15,488 - INFO - 127.0.0.1 - - [08/Apr/2026 13:33:15] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:33:15,489 - INFO - 127.0.0.1 - - [08/Apr/2026 13:33:15] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:33:15,574 - INFO - 127.0.0.1 - - [08/Apr/2026 13:33:15] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:33:15,623 - INFO - 127.0.0.1 - - [08/Apr/2026 13:33:15] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:34:48,351 - INFO - 127.0.0.1 - - [08/Apr/2026 13:34:48] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:34:48,378 - INFO - 127.0.0.1 - - [08/Apr/2026 13:34:48] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:34:48,381 - INFO - 127.0.0.1 - - [08/Apr/2026 13:34:48] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:34:48,391 - INFO - 127.0.0.1 - - [08/Apr/2026 13:34:48] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:34:48,398 - INFO - 127.0.0.1 - - [08/Apr/2026 13:34:48] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:34:48,470 - INFO - 127.0.0.1 - - [08/Apr/2026 13:34:48] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:34:48,520 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 507, in get_apispecs
+    for key, value in responses.items()
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'items'
+2026-04-08 13:34:48,585 - INFO - 127.0.0.1 - - [08/Apr/2026 13:34:48] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:35:06,349 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:35:06,351 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:35:06,359 - INFO -  * Restarting with stat
+2026-04-08 13:35:07,343 - WARNING -  * Debugger is active!
+2026-04-08 13:35:07,352 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:35:09,547 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:09] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:35:09,784 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:09] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:35:09,799 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:09] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:09,803 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:09] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:09,819 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:09] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:09,878 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:09] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:35:09,903 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 507, in get_apispecs
+    for key, value in responses.items()
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'items'
+2026-04-08 13:35:09,956 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:09] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:35:46,200 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:46] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:35:46,227 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:46] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:35:46,241 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:46] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:46,244 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:46] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:46,244 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:46] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:46,315 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:46] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:35:46,351 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 507, in get_apispecs
+    for key, value in responses.items()
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'items'
+2026-04-08 13:35:46,402 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:46] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:35:49,627 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:49] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:35:49,659 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:49] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:35:49,661 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:49] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:49,663 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:49] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:49,667 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:49] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:35:49,772 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 507, in get_apispecs
+    for key, value in responses.items()
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'items'
+2026-04-08 13:35:49,825 - INFO - 127.0.0.1 - - [08/Apr/2026 13:35:49] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:37:10,322 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\app.py', reloading
+2026-04-08 13:37:10,465 - INFO -  * Restarting with stat
+2026-04-08 13:37:11,799 - WARNING -  * Debugger is active!
+2026-04-08 13:37:11,808 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:37:34,419 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\app.py', reloading
+2026-04-08 13:37:34,604 - INFO -  * Restarting with stat
+2026-04-08 13:37:35,800 - WARNING -  * Debugger is active!
+2026-04-08 13:37:35,810 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:37:38,460 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\app.py', reloading
+2026-04-08 13:37:38,656 - INFO -  * Restarting with stat
+2026-04-08 13:37:39,460 - WARNING -  * Debugger is active!
+2026-04-08 13:37:39,474 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:37:42,185 - INFO - 127.0.0.1 - - [08/Apr/2026 13:37:42] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:37:42,450 - INFO - 127.0.0.1 - - [08/Apr/2026 13:37:42] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:37:42,496 - INFO - 127.0.0.1 - - [08/Apr/2026 13:37:42] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:37:42,504 - INFO - 127.0.0.1 - - [08/Apr/2026 13:37:42] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:37:42,508 - INFO - 127.0.0.1 - - [08/Apr/2026 13:37:42] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:37:42,615 - INFO - 127.0.0.1 - - [08/Apr/2026 13:37:42] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:37:42,649 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 507, in get_apispecs
+    for key, value in responses.items()
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'items'
+2026-04-08 13:37:42,727 - INFO - 127.0.0.1 - - [08/Apr/2026 13:37:42] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:37:59,542 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 13:37:59,543 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 13:37:59,545 - INFO -  * Restarting with stat
+2026-04-08 13:38:00,732 - WARNING -  * Debugger is active!
+2026-04-08 13:38:00,744 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 13:38:01,029 - INFO - 127.0.0.1 - - [08/Apr/2026 13:38:01] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:38:01,326 - INFO - 127.0.0.1 - - [08/Apr/2026 13:38:01] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:38:01,328 - INFO - 127.0.0.1 - - [08/Apr/2026 13:38:01] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:38:01,355 - INFO - 127.0.0.1 - - [08/Apr/2026 13:38:01] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:38:01,365 - INFO - 127.0.0.1 - - [08/Apr/2026 13:38:01] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:38:01,438 - INFO - 127.0.0.1 - - [08/Apr/2026 13:38:01] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:38:01,461 - INFO - 127.0.0.1 - - [08/Apr/2026 13:38:01] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:39:09,546 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:09] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:39:09,573 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:09] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:39:09,578 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:09] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:39:09,590 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:09] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:39:09,591 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:09] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:39:09,670 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:09] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:39:09,692 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:09] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:39:41,871 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:41] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:39:41,899 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:41] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:39:41,903 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:41] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:39:41,905 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:41] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:39:41,910 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:41] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:39:42,002 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:42] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:39:42,031 - INFO - 127.0.0.1 - - [08/Apr/2026 13:39:42] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:40:00,528 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:00] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:40:00,557 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:00] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:40:00,561 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:00] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:40:00,570 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:00] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:40:00,572 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:00] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:40:00,657 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:00] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:40:00,689 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:00] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:40:55,922 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:55] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:40:55,956 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:55] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:40:55,962 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:55] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:40:55,975 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:55] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:40:55,986 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:55] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:40:56,079 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:56] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:40:56,089 - ERROR - jsonify failure; defaulting to json.dumps
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 164, in get
+    return jsonify(self.loader())
+                   ~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\base.py", line 438, in get_apispecs
+    specs = get_specs(
+        self.get_url_mappings(spec.get('rule_filter')), ignore_verbs,
+        optional_fields, self.sanitizer,
+        openapi_version=openapi_version,
+        doc_dir=self.config.get('doc_dir'))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 180, in get_specs
+    doc_summary, doc_description, doc_swag = parse_docstring(
+                                             ~~~~~~~~~~~~~~~^
+        method, sanitizer, endpoint=rule.endpoint, verb=verb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\flasgger\utils.py", line 678, in parse_docstring
+    swag = yaml.safe_load(full_doc)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\yaml\parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+            "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 8, column 5:
+        description: Lista de keys ativa ... 
+        ^
+expected <block end>, but found '<block mapping start>'
+  in "<unicode string>", line 26, column 9:
+            example:
+            ^
+2026-04-08 13:40:56,155 - INFO - 127.0.0.1 - - [08/Apr/2026 13:40:56] "[35m[1mGET /apispec_1.json HTTP/1.1[0m" 500 -
+2026-04-08 13:41:08,253 - INFO - 127.0.0.1 - - [08/Apr/2026 13:41:08] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:41:08,277 - INFO - 127.0.0.1 - - [08/Apr/2026 13:41:08] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:41:08,290 - INFO - 127.0.0.1 - - [08/Apr/2026 13:41:08] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:41:08,293 - INFO - 127.0.0.1 - - [08/Apr/2026 13:41:08] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:41:08,294 - INFO - 127.0.0.1 - - [08/Apr/2026 13:41:08] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:41:08,392 - INFO - 127.0.0.1 - - [08/Apr/2026 13:41:08] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:41:08,423 - INFO - 127.0.0.1 - - [08/Apr/2026 13:41:08] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 13:43:17,119 - INFO - 127.0.0.1 - - [08/Apr/2026 13:43:17] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 13:43:17,149 - INFO - 127.0.0.1 - - [08/Apr/2026 13:43:17] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 13:43:17,153 - INFO - 127.0.0.1 - - [08/Apr/2026 13:43:17] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 13:43:17,154 - INFO - 127.0.0.1 - - [08/Apr/2026 13:43:17] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 13:43:17,159 - INFO - 127.0.0.1 - - [08/Apr/2026 13:43:17] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 13:43:17,245 - INFO - 127.0.0.1 - - [08/Apr/2026 13:43:17] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 13:43:17,279 - INFO - 127.0.0.1 - - [08/Apr/2026 13:43:17] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 14:00:25,384 - INFO - 127.0.0.1 - - [08/Apr/2026 14:00:25] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 14:00:25,417 - INFO - 127.0.0.1 - - [08/Apr/2026 14:00:25] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 14:00:25,421 - INFO - 127.0.0.1 - - [08/Apr/2026 14:00:25] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 14:00:25,428 - INFO - 127.0.0.1 - - [08/Apr/2026 14:00:25] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 14:00:25,429 - INFO - 127.0.0.1 - - [08/Apr/2026 14:00:25] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 14:00:25,567 - INFO - 127.0.0.1 - - [08/Apr/2026 14:00:25] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 14:00:25,602 - INFO - 127.0.0.1 - - [08/Apr/2026 14:00:25] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 14:01:50,795 - INFO - 127.0.0.1 - - [08/Apr/2026 14:01:50] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 14:01:50,821 - INFO - 127.0.0.1 - - [08/Apr/2026 14:01:50] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 14:01:50,835 - INFO - 127.0.0.1 - - [08/Apr/2026 14:01:50] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 14:01:50,843 - INFO - 127.0.0.1 - - [08/Apr/2026 14:01:50] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 14:01:50,845 - INFO - 127.0.0.1 - - [08/Apr/2026 14:01:50] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 14:01:50,929 - INFO - 127.0.0.1 - - [08/Apr/2026 14:01:50] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 14:01:50,963 - INFO - 127.0.0.1 - - [08/Apr/2026 14:01:50] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 14:03:32,575 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-08 14:03:32,576 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 14:03:32,579 - INFO -  * Restarting with stat
+2026-04-08 14:03:33,772 - WARNING -  * Debugger is active!
+2026-04-08 14:03:33,796 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 14:03:34,090 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:34] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 14:03:34,301 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:34] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 14:03:34,313 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:34] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 14:03:34,341 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:34] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 14:03:34,342 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:34] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 14:03:34,418 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:34] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 14:03:34,436 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:34] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 14:03:53,531 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:53] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 14:03:53,563 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:53] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 14:03:53,568 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:53] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 14:03:53,577 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:53] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 14:03:53,588 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:53] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 14:03:53,668 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:53] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 14:03:53,684 - INFO - 127.0.0.1 - - [08/Apr/2026 14:03:53] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 14:05:25,338 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-08 14:05:25,339 - INFO - 127.0.0.1 - - [08/Apr/2026 14:05:25] "POST /login HTTP/1.1" 200 -
+2026-04-08 14:05:47,860 - WARNING - Ip=127.0.0.1 | Rota=/key/lista | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-08 14:05:47,869 - INFO - Ip=127.0.0.1 | Rota=/key/lista | Metodo = GET | CPF=123 | Listou suas API Keys ativas
+2026-04-08 14:05:47,870 - INFO - 127.0.0.1 - - [08/Apr/2026 14:05:47] "GET /key/lista HTTP/1.1" 200 -
+2026-04-08 14:05:58,242 - WARNING - Ip=127.0.0.1 | Rota=/key/criar | Metodo = POST | CPF=123 | Enviou um token valido! 
+2026-04-08 14:05:58,316 - INFO - Ip=127.0.0.1 | Rota=/key/criar | Metodo = POST | CPF=123 | Gerou uma nova API Key
+2026-04-08 14:05:58,317 - INFO - 127.0.0.1 - - [08/Apr/2026 14:05:58] "[35m[1mPOST /key/criar HTTP/1.1[0m" 201 -
+2026-04-08 14:07:22,514 - WARNING - Ip=127.0.0.1 | Rota=/key/desativar | Metodo = POST | CPF=123 | Enviou um token valido! 
+2026-04-08 14:07:22,562 - INFO - Ip=127.0.0.1 | Rota=/key/desativar | Metodo = POST | CPF=123 | Desativou uma API Key(fbec90570e1ad278ef16ef49ef9dbe8f6207c2fb70b09ad93a362b30ad3c19dc)
+2026-04-08 14:07:22,562 - INFO - 127.0.0.1 - - [08/Apr/2026 14:07:22] "POST /key/desativar HTTP/1.1" 200 -
+2026-04-08 14:07:27,991 - WARNING - Ip=127.0.0.1 | Rota=/key/lista | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-08 14:07:27,991 - INFO - Ip=127.0.0.1 | Rota=/key/lista | Metodo = GET | CPF=123 | Listou suas API Keys ativas
+2026-04-08 14:07:27,992 - INFO - 127.0.0.1 - - [08/Apr/2026 14:07:27] "GET /key/lista HTTP/1.1" 200 -
+2026-04-08 14:07:32,240 - WARNING - Ip=127.0.0.1 | Rota=/key/criar | Metodo = POST | CPF=123 | Enviou um token valido! 
+2026-04-08 14:07:32,293 - INFO - Ip=127.0.0.1 | Rota=/key/criar | Metodo = POST | CPF=123 | Gerou uma nova API Key
+2026-04-08 14:07:32,293 - INFO - 127.0.0.1 - - [08/Apr/2026 14:07:32] "[35m[1mPOST /key/criar HTTP/1.1[0m" 201 -
+2026-04-08 14:07:37,271 - WARNING - Ip=127.0.0.1 | Rota=/key/lista | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-08 14:07:37,272 - INFO - Ip=127.0.0.1 | Rota=/key/lista | Metodo = GET | CPF=123 | Listou suas API Keys ativas
+2026-04-08 14:07:37,272 - INFO - 127.0.0.1 - - [08/Apr/2026 14:07:37] "GET /key/lista HTTP/1.1" 200 -
+2026-04-08 14:27:50,354 - INFO - 127.0.0.1 - - [08/Apr/2026 14:27:50] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 14:27:50,380 - INFO - 127.0.0.1 - - [08/Apr/2026 14:27:50] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 14:27:50,389 - INFO - 127.0.0.1 - - [08/Apr/2026 14:27:50] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 14:27:50,390 - INFO - 127.0.0.1 - - [08/Apr/2026 14:27:50] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 14:27:50,391 - INFO - 127.0.0.1 - - [08/Apr/2026 14:27:50] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 14:27:50,496 - INFO - 127.0.0.1 - - [08/Apr/2026 14:27:50] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 14:27:50,532 - INFO - 127.0.0.1 - - [08/Apr/2026 14:27:50] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-08 14:30:14,506 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-08 14:30:14,717 - INFO -  * Restarting with stat
+2026-04-08 14:30:15,498 - WARNING -  * Debugger is active!
+2026-04-08 14:30:15,506 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 14:30:48,110 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-08 14:30:48,363 - INFO -  * Restarting with stat
+2026-04-08 14:30:49,196 - WARNING -  * Debugger is active!
+2026-04-08 14:30:49,206 - INFO -  * Debugger PIN: 258-432-752
+2026-04-08 14:30:51,674 - INFO - 127.0.0.1 - - [08/Apr/2026 14:30:51] "GET /apidocs/ HTTP/1.1" 200 -
+2026-04-08 14:30:51,947 - INFO - 127.0.0.1 - - [08/Apr/2026 14:30:51] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2026-04-08 14:30:51,950 - INFO - 127.0.0.1 - - [08/Apr/2026 14:30:51] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2026-04-08 14:30:51,959 - INFO - 127.0.0.1 - - [08/Apr/2026 14:30:51] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2026-04-08 14:30:51,963 - INFO - 127.0.0.1 - - [08/Apr/2026 14:30:51] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2026-04-08 14:30:52,048 - INFO - 127.0.0.1 - - [08/Apr/2026 14:30:52] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2026-04-08 14:30:52,076 - INFO - 127.0.0.1 - - [08/Apr/2026 14:30:52] "GET /apispec_1.json HTTP/1.1" 200 -
+2026-04-09 13:16:10,281 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-09 13:16:10,291 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-09 13:16:10,298 - INFO -  * Restarting with stat
+2026-04-09 13:16:11,390 - WARNING -  * Debugger is active!
+2026-04-09 13:16:11,402 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 13:16:22,407 - INFO - 127.0.0.1 - - [09/Apr/2026 13:16:22] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:16:27,395 - INFO - 127.0.0.1 - - [09/Apr/2026 13:16:27] "[31m[1mPOST /registrar HTTP/1.1[0m" 415 -
+2026-04-09 13:16:44,078 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\service\\auth.py', reloading
+2026-04-09 13:16:45,033 - INFO -  * Restarting with stat
+2026-04-09 13:16:46,315 - WARNING -  * Debugger is active!
+2026-04-09 13:16:46,324 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 13:16:49,026 - INFO - 127.0.0.1 - - [09/Apr/2026 13:16:49] "[31m[1mPOST /registrar HTTP/1.1[0m" 415 -
+2026-04-09 13:16:54,706 - INFO - 127.0.0.1 - - [09/Apr/2026 13:16:54] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:16:59,321 - INFO - 127.0.0.1 - - [09/Apr/2026 13:16:59] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:17:10,360 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\service\\auth.py', reloading
+2026-04-09 13:17:10,541 - INFO -  * Restarting with stat
+2026-04-09 13:17:12,539 - WARNING -  * Debugger is active!
+2026-04-09 13:17:12,552 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 13:17:14,692 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\service\\auth.py', reloading
+2026-04-09 13:17:14,892 - INFO -  * Restarting with stat
+2026-04-09 13:17:16,214 - WARNING -  * Debugger is active!
+2026-04-09 13:17:16,232 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 13:17:17,463 - INFO - 127.0.0.1 - - [09/Apr/2026 13:17:17] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:17:21,826 - INFO - 127.0.0.1 - - [09/Apr/2026 13:17:21] "[31m[1mPOST /registrar HTTP/1.1[0m" 415 -
+2026-04-09 13:17:36,814 - INFO - 127.0.0.1 - - [09/Apr/2026 13:17:36] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:19:51,993 - INFO - 127.0.0.1 - - [09/Apr/2026 13:19:51] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:20:34,439 - INFO - 127.0.0.1 - - [09/Apr/2026 13:20:34] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:20:41,208 - INFO - 127.0.0.1 - - [09/Apr/2026 13:20:41] "[31m[1mPOST /registrar HTTP/1.1[0m" 400 -
+2026-04-09 13:20:50,873 - INFO - 127.0.0.1 - - [09/Apr/2026 13:20:50] "[31m[1mPOST /registrar HTTP/1.1[0m" 409 -
+2026-04-09 13:20:55,615 - INFO - 127.0.0.1 - - [09/Apr/2026 13:20:55] "[31m[1mPOST /registrar HTTP/1.1[0m" 409 -
+2026-04-09 13:21:07,574 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\service\\auth.py', reloading
+2026-04-09 13:21:07,769 - INFO -  * Restarting with stat
+2026-04-09 13:21:09,068 - WARNING -  * Debugger is active!
+2026-04-09 13:21:09,077 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 13:21:10,849 - INFO - 127.0.0.1 - - [09/Apr/2026 13:21:10] "[31m[1mPOST /registrar HTTP/1.1[0m" 409 -
+2026-04-09 13:22:02,723 - INFO - Ip=127.0.0.1 | Rota=/registrar | Metodo = POST | Usuario registrado com sucesso, cpf: 1245678
+2026-04-09 13:22:02,724 - INFO - 127.0.0.1 - - [09/Apr/2026 13:22:02] "[35m[1mPOST /registrar HTTP/1.1[0m" 201 -
+2026-04-09 13:29:33,581 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 13:29:33,582 - INFO - 127.0.0.1 - - [09/Apr/2026 13:29:33] "POST /login HTTP/1.1" 200 -
+2026-04-09 13:34:29,855 - INFO - 127.0.0.1 - - [09/Apr/2026 13:34:29] "[31m[1mPOST /login HTTP/1.1[0m" 415 -
+2026-04-09 13:35:05,083 - INFO - 127.0.0.1 - - [09/Apr/2026 13:35:05] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2026-04-09 13:35:36,022 - INFO - 127.0.0.1 - - [09/Apr/2026 13:35:36] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2026-04-09 13:35:57,796 - INFO - 127.0.0.1 - - [09/Apr/2026 13:35:57] "[33mPOST /login HTTP/1.1[0m" 404 -
+2026-04-09 13:36:16,328 - INFO - 127.0.0.1 - - [09/Apr/2026 13:36:16] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-04-09 13:36:38,532 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 13:36:38,533 - INFO - 127.0.0.1 - - [09/Apr/2026 13:36:38] "POST /login HTTP/1.1" 200 -
+2026-04-09 13:41:36,315 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 13:41:36,316 - INFO - 127.0.0.1 - - [09/Apr/2026 13:41:36] "POST /login HTTP/1.1" 200 -
+2026-04-09 13:42:03,021 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 13:42:03,022 - INFO - 127.0.0.1 - - [09/Apr/2026 13:42:03] "POST /login HTTP/1.1" 200 -
+2026-04-09 13:42:49,334 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 13:42:49,335 - INFO - 127.0.0.1 - - [09/Apr/2026 13:42:49] "POST /login HTTP/1.1" 200 -
+2026-04-09 13:43:00,990 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 13:43:00,990 - INFO - 127.0.0.1 - - [09/Apr/2026 13:43:00] "POST /login HTTP/1.1" 200 -
+2026-04-09 13:44:08,984 - INFO - 127.0.0.1 - - [09/Apr/2026 13:44:08] "[33mPOST /login HTTP/1.1[0m" 404 -
+2026-04-09 13:48:08,046 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 13:48:08,047 - INFO - 127.0.0.1 - - [09/Apr/2026 13:48:08] "POST /login HTTP/1.1" 200 -
+2026-04-09 13:48:10,862 - WARNING - Ip=127.0.0.1 | Rota=/keys/criar | Metodo = POST | CPF=123 | Enviou um token valido! 
+2026-04-09 13:48:11,007 - INFO - Ip=127.0.0.1 | Rota=/keys/criar | Metodo = POST | CPF=123 | Gerou uma nova API Key
+2026-04-09 13:48:11,007 - INFO - 127.0.0.1 - - [09/Apr/2026 13:48:11] "[35m[1mPOST /keys/criar HTTP/1.1[0m" 201 -
+2026-04-09 13:51:34,761 - WARNING - Ip=127.0.0.1 | Rota=/keys/criar | Metodo = POST | Nao enviou um token
+2026-04-09 13:51:34,761 - INFO - 127.0.0.1 - - [09/Apr/2026 13:51:34] "[31m[1mPOST /keys/criar HTTP/1.1[0m" 400 -
+2026-04-09 13:51:58,177 - WARNING - Ip=127.0.0.1 | Rota=/keys/criar | Metodo = POST | Enviou um token invalido!
+2026-04-09 13:51:58,178 - INFO - 127.0.0.1 - - [09/Apr/2026 13:51:58] "[31m[1mPOST /keys/criar HTTP/1.1[0m" 401 -
+2026-04-09 14:01:50,051 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-09 14:01:50,065 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-09 14:01:50,070 - INFO -  * Restarting with stat
+2026-04-09 14:01:51,501 - WARNING -  * Debugger is active!
+2026-04-09 14:01:51,513 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 14:02:01,918 - WARNING - Ip=127.0.0.1 | Rota=/keys/lista | Metodo = GET | Nao enviou um token
+2026-04-09 14:02:01,919 - INFO - 127.0.0.1 - - [09/Apr/2026 14:02:01] "[31m[1mGET /keys/lista HTTP/1.1[0m" 400 -
+2026-04-09 14:03:02,467 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 14:03:02,467 - INFO - 127.0.0.1 - - [09/Apr/2026 14:03:02] "POST /login HTTP/1.1" 200 -
+2026-04-09 14:03:11,753 - WARNING - Ip=127.0.0.1 | Rota=/keys/lista | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-09 14:03:11,754 - INFO - Ip=127.0.0.1 | Rota=/keys/lista | Metodo = GET | CPF=123 | Listou suas API Keys ativas
+2026-04-09 14:03:11,754 - INFO - 127.0.0.1 - - [09/Apr/2026 14:03:11] "GET /keys/lista HTTP/1.1" 200 -
+2026-04-09 14:04:48,877 - WARNING - Ip=127.0.0.1 | Rota=/keys/lista | Metodo = GET | Enviou um token invalido!
+2026-04-09 14:04:48,877 - INFO - 127.0.0.1 - - [09/Apr/2026 14:04:48] "[31m[1mGET /keys/lista HTTP/1.1[0m" 401 -
+2026-04-09 14:05:18,076 - WARNING - Ip=127.0.0.1 | Rota=/keys/lista | Metodo = GET | CPF=123 | Enviou um token valido! 
+2026-04-09 14:05:18,077 - INFO - Ip=127.0.0.1 | Rota=/keys/lista | Metodo = GET | CPF=123 | Listou suas API Keys ativas
+2026-04-09 14:05:18,077 - INFO - 127.0.0.1 - - [09/Apr/2026 14:05:18] "GET /keys/lista HTTP/1.1" 200 -
+2026-04-09 14:06:11,039 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-09 14:06:11,344 - INFO -  * Restarting with stat
+2026-04-09 14:06:13,205 - WARNING -  * Debugger is active!
+2026-04-09 14:06:13,230 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 14:06:32,510 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-09 14:06:32,733 - INFO -  * Restarting with stat
+2026-04-09 14:06:33,867 - WARNING -  * Debugger is active!
+2026-04-09 14:06:33,878 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 14:54:28,737 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 14:54:29,202 - INFO -  * Restarting with stat
+2026-04-09 14:54:30,677 - WARNING -  * Debugger is active!
+2026-04-09 14:54:30,708 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 14:54:32,265 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 14:54:32,396 - INFO -  * Restarting with stat
+2026-04-09 15:12:07,300 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-09 15:12:07,302 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-09 15:12:07,305 - INFO -  * Restarting with stat
+2026-04-09 15:12:08,392 - WARNING -  * Debugger is active!
+2026-04-09 15:12:08,402 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:15:19,624 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-09 15:15:19,846 - INFO -  * Restarting with stat
+2026-04-09 15:15:21,561 - WARNING -  * Debugger is active!
+2026-04-09 15:15:21,571 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:15:25,442 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-09 15:15:25,559 - INFO -  * Restarting with stat
+2026-04-09 15:15:26,774 - WARNING -  * Debugger is active!
+2026-04-09 15:15:26,782 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:15:27,127 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-09 15:15:27,250 - INFO -  * Restarting with stat
+2026-04-09 15:15:27,965 - WARNING -  * Debugger is active!
+2026-04-09 15:15:27,975 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:25:50,165 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-09 15:25:50,170 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-09 15:25:50,173 - INFO -  * Restarting with stat
+2026-04-09 15:25:51,320 - WARNING -  * Debugger is active!
+2026-04-09 15:25:51,343 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:26:11,414 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:26:11,415 - INFO - 127.0.0.1 - - [09/Apr/2026 15:26:11] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:26:12,546 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:26:12,546 - INFO - 127.0.0.1 - - [09/Apr/2026 15:26:12] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:26:13,483 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:26:13,483 - INFO - 127.0.0.1 - - [09/Apr/2026 15:26:13] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:26:14,416 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:26:14,416 - INFO - 127.0.0.1 - - [09/Apr/2026 15:26:14] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:26:15,278 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:26:15,278 - INFO - 127.0.0.1 - - [09/Apr/2026 15:26:15] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:26:16,098 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:26:16,099 - INFO - 127.0.0.1 - - [09/Apr/2026 15:26:16] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:26:17,249 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:26:17,249 - INFO - 127.0.0.1 - - [09/Apr/2026 15:26:17] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:26:29,438 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-09 15:26:29,582 - INFO -  * Restarting with stat
+2026-04-09 15:26:31,067 - WARNING -  * Debugger is active!
+2026-04-09 15:26:31,080 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:26:38,627 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\routes\\routes.py', reloading
+2026-04-09 15:26:38,810 - INFO -  * Restarting with stat
+2026-04-09 15:27:04,052 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-09 15:27:04,052 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-09 15:27:04,055 - INFO -  * Restarting with stat
+2026-04-09 15:27:05,256 - WARNING -  * Debugger is active!
+2026-04-09 15:27:05,265 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:27:07,129 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:27:07,129 - INFO - 127.0.0.1 - - [09/Apr/2026 15:27:07] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:27:07,753 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:27:07,754 - INFO - 127.0.0.1 - - [09/Apr/2026 15:27:07] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:27:27,275 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-09 15:27:27,276 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-09 15:27:27,279 - INFO -  * Restarting with stat
+2026-04-09 15:27:28,113 - WARNING -  * Debugger is active!
+2026-04-09 15:27:28,124 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:27:29,615 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:27:29,616 - INFO - 127.0.0.1 - - [09/Apr/2026 15:27:29] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:31:08,556 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 15:31:08,683 - INFO -  * Restarting with stat
+2026-04-09 15:31:09,926 - WARNING -  * Debugger is active!
+2026-04-09 15:31:09,935 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:31:12,271 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:31:12,272 - INFO - 127.0.0.1 - - [09/Apr/2026 15:31:12] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:31:12,837 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:31:12,838 - INFO - 127.0.0.1 - - [09/Apr/2026 15:31:12] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:31:13,389 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:31:13,389 - INFO - 127.0.0.1 - - [09/Apr/2026 15:31:13] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:31:14,168 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:31:14,169 - INFO - 127.0.0.1 - - [09/Apr/2026 15:31:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:31:43,232 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 15:31:43,346 - INFO -  * Restarting with stat
+2026-04-09 15:31:44,120 - WARNING -  * Debugger is active!
+2026-04-09 15:31:44,138 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:31:49,411 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:31:49,507 - INFO - 127.0.0.1 - - [09/Apr/2026 15:31:49] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-04-09 15:32:54,625 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 15:32:54,850 - INFO -  * Restarting with stat
+2026-04-09 15:32:55,629 - WARNING -  * Debugger is active!
+2026-04-09 15:32:55,639 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:33:06,885 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:33:06,885 - INFO - 127.0.0.1 - - [09/Apr/2026 15:33:06] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:33:43,758 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 15:33:43,891 - INFO -  * Restarting with stat
+2026-04-09 15:33:45,268 - WARNING -  * Debugger is active!
+2026-04-09 15:33:45,277 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:33:50,073 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:33:50,074 - INFO - 127.0.0.1 - - [09/Apr/2026 15:33:50] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:33:51,075 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:33:51,075 - INFO - 127.0.0.1 - - [09/Apr/2026 15:33:51] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:33:51,749 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:33:51,750 - INFO - 127.0.0.1 - - [09/Apr/2026 15:33:51] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:33:59,350 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:33:59,351 - INFO - 127.0.0.1 - - [09/Apr/2026 15:33:59] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:34:00,171 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:34:00,172 - INFO - 127.0.0.1 - - [09/Apr/2026 15:34:00] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:34:05,476 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:34:05,476 - INFO - 127.0.0.1 - - [09/Apr/2026 15:34:05] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:34:06,253 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:34:06,253 - INFO - 127.0.0.1 - - [09/Apr/2026 15:34:06] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:34:15,951 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:34:15,952 - INFO - 127.0.0.1 - - [09/Apr/2026 15:34:15] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2026-04-09 15:34:40,248 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 15:34:40,412 - INFO -  * Restarting with stat
+2026-04-09 15:34:41,597 - WARNING -  * Debugger is active!
+2026-04-09 15:34:41,606 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:34:44,174 - INFO - 127.0.0.1 - - [09/Apr/2026 15:34:44] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-04-09 15:35:00,041 - INFO -  * Detected change in 'e:\\Arquivos\\Estudos\\API\\Api Keys - Management\\middlewares\\middlewares.py', reloading
+2026-04-09 15:35:00,169 - INFO -  * Restarting with stat
+2026-04-09 15:35:01,377 - WARNING -  * Debugger is active!
+2026-04-09 15:35:01,388 - INFO -  * Debugger PIN: 258-432-752
+2026-04-09 15:35:03,963 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:35:03,964 - INFO - 127.0.0.1 - - [09/Apr/2026 15:35:03] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:35:05,732 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:35:05,733 - INFO - 127.0.0.1 - - [09/Apr/2026 15:35:05] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:35:06,666 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:35:06,667 - INFO - 127.0.0.1 - - [09/Apr/2026 15:35:06] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:35:07,598 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:35:07,599 - INFO - 127.0.0.1 - - [09/Apr/2026 15:35:07] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:35:08,537 - INFO - Ip=127.0.0.1 | Rota=/login | Metodo = POST | Usuario logou com sucesso, cpf: 123
+2026-04-09 15:35:08,537 - INFO - 127.0.0.1 - - [09/Apr/2026 15:35:08] "POST /login HTTP/1.1" 200 -
+2026-04-09 15:35:09,015 - WARNING - Ip=127.0.0.1 | Rota=/login | Metodo = POST | CPF=123 | Utilizou o maximo de tentativas de login
+2026-04-09 15:35:09,015 - INFO - 127.0.0.1 - - [09/Apr/2026 15:35:09] "[31m[1mPOST /login HTTP/1.1[0m" 429 -

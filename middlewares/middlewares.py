@@ -1,3 +1,5 @@
+from configparser import Error
+
 from flask import jsonify, request,g
 from models.clientes.clientes import conectar
 from models.usuarios.usuarios import conectar as conectar_usuarios
@@ -64,7 +66,7 @@ def api_key_required(func):
         return func(*args, **kwargs)
     return wrapper         
 
-rate = {}
+rates_limit_api = {}
 
 def rate_limit_api(func):
         @wraps(func)
@@ -79,18 +81,17 @@ def rate_limit_api(func):
             rate_limit = usuario_dados[1]
             g.allowed_routes = usuario_dados[2]
             taxa = rate_limit/window
-
-            if api_key not in rate:
-                rate[api_key] = {}
-            if rota_chamada not in rate[api_key]:
-                rate[api_key][rota_chamada] = {}
-            if metodo_chamado not in rate[api_key][rota_chamada]:
-                rate[api_key][rota_chamada][metodo_chamado] = {
+            if api_key not in rates_limit_api:
+                rates_limit_api[api_key] = {}
+            if rota_chamada not in rates_limit_api[api_key]:
+                rates_limit_api[api_key][rota_chamada] = {}
+            if metodo_chamado not in rates_limit_api[api_key][rota_chamada]:
+                rates_limit_api[api_key][rota_chamada][metodo_chamado] = {
                     "tokens" : rate_limit,
                     "ultimo_update" : agora
                 }
 
-            bucket = rate[api_key][rota_chamada][metodo_chamado]
+            bucket = rates_limit_api[api_key][rota_chamada][metodo_chamado]
             tempo_passado = agora - bucket['ultimo_update']
             bucket["tokens"] += tempo_passado* taxa
             if bucket["tokens"] > rate_limit:
@@ -102,6 +103,38 @@ def rate_limit_api(func):
             bucket["ultimo_update"] = agora
             return func(*args,**kwargs)
         return wrapper
+#TODO ver verificacao de se o cpf foi enviado!
+
+rates_limit_login = {}
+def rate_limit_login(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        dados = request.get_json()
+        if not dados:
+            return error(("Json nao enviado!"), 400)
+        if "cpf" not in dados:
+            return error(("Cpf esta faltando!"), 400)
+        if "senha" not in dados:
+            return error(("A senha esta faltando!"), 400)
+        cpf = dados['cpf']
+        agora = time.time()
+        if cpf not in rates_limit_login:
+            rates_limit_login[cpf] = {
+                "tentativas" : 5,
+                "ultimo_update" : agora
+            }
+        bucket = rates_limit_login[cpf]
+        tempo_passado = agora - bucket['ultimo_update']
+        bucket['tentativas'] += tempo_passado * (5/600)
+        if bucket['tentativas'] > 5:
+            bucket['tentativas'] = 5
+        if bucket['tentativas'] < 1:
+            loggerWarning(f"CPF={cpf} | Utilizou o maximo de tentativas de login")
+            return error(("Maximo de tentativas de login atingidos, aguarde!"), 429)
+        bucket["tentativas"] -= 1
+        bucket["ultimo_update"] = agora
+        return func(*args, **kwargs)
+    return wrapper
 
 
 def permission_required(func):

@@ -12,7 +12,7 @@ cursor = conectar.cursor()
 class Auth:
     def registrar(dados):
             if not dados:
-                Error(("Json nao enviado!"), 400)
+                return Error(("Json nao enviado!"), 400)
             if "cpf" not in dados:
                 return Error(("Cpf esta faltando!"), 400)
             if "senha" not in dados:
@@ -32,7 +32,7 @@ class Auth:
                     "mensagem" : "Usuario criado com sucesso!"
                 }), 201
             except sqlite3.IntegrityError:
-                return Error(("Cpf já registrado!"), 409)
+                return Error(("Cpf ja registrado!"), 409)
     
     def gerarToken(cpf):
         agora = time.time()
@@ -44,12 +44,6 @@ class Auth:
         return token
     
     def login(dados):
-        if not dados:
-            return Error(("Json nao enviado!"), 400)
-        if "cpf" not in dados:
-            return Error(("Cpf esta faltando!"), 400)
-        if "senha" not in dados:
-            return Error(("A senha esta faltando!"), 400)
         cursor.execute("SELECT senha FROM usuarios WHERE cpf = ?", (dados['cpf'],))
         fetch_senha_usuario = cursor.fetchone()
         if fetch_senha_usuario == None:

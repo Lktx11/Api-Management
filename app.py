@@ -5,11 +5,11 @@ app = Flask(__name__)
 app.register_blueprint(routes_bp)
 swagger_template = {
     "securityDefinitions": {
-        "bearerAuth": {
+        "BearerAuth": {
             "type": "apiKey",
             "name": "Authorization",
             "in": "header",
-            "description": "Digite seu token"
+            "description": "Digite seu token JWT"
         },
         "ApiKey": {
             "type": "apiKey",

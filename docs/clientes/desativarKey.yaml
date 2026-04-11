@@ -1,0 +1,44 @@
+summary: Desativa uma Api Key
+description: Desativa uma Api Key existente do usuario que enviou o seu Token de accesso JWT.
+
+tags:
+  - Api Keys
+
+security:
+  - BearerAuth: []
+
+
+parameters:
+  - in: body
+    name: body
+    required: true
+    schema:
+      type: object
+      required:
+        - key 
+      properties:
+        key:
+          type: string
+          description: A Api Key que se deseja desativar
+          example: "123e4567-e89b-12d3-a456-426614174000"
+
+responses:
+  200:
+    description: Key desativada com sucesso
+    schema:
+          type: object
+          properties:
+            status:
+              type: string
+              description: Status da operação
+            mensagem:
+              type: string
+              description: Mensagem detalhada sobre o resultado da operação
+    example:
+          status: "sucesso"
+          mensagem: "Key desativada com sucesso!"
+
+  400:
+    description: Requisição inválida - token de acesso ausente ou chave de API faltando
+  404:
+    description: Key não encontrada ou já desativada

@@ -1,23 +1,15 @@
 summary: Listar keys ativas
 description: Endpoint para listar todas as keys ativas do usuario
 
-security:
-  - bearerAuth: []
+tags:
+  - Api Keys
 
-parameters:
-  - in: header
-    name: Authorization
-    description: Token de autenticação do usuário
-    required: true
-    schema:
-      type: string
-      example: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+security:
+  - BearerAuth: []
 responses:
   200:
     description: Lista de keys ativas retornada com sucesso
-    content:
-      application/json:
-        schema:
+    schema:
           type: object
           properties:
             status:
@@ -28,13 +20,13 @@ responses:
               items:
                 type: object
                 properties:
-                  key:
+                  key: 
                     type: string
                     description: A API Key ativa do usuário
                   created_at:
                     type: integer
                     description: Timestamp de criação da API Key
-        example:
+    example:
           status: "sucesso"
           keys:
             - key: "123e4567-e89b-12d3-a456-426614174000"
@@ -44,28 +36,8 @@ responses:
 
   400:
     description: Requisição inválida - token de autenticação ausente
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            erro:
-              type: string
-              description: Mensagem de erro detalhada
-        example:
-          erro: "Token de autenticação ausente"
   401:
     description: Não autorizado - token de acesso inválido ou expirado
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            erro:
-              type: string
-              description: Mensagem de erro detalhada
-        example:
-          erro: "Token de acesso inválido ou expirado"
 
   500:
     description: Erro interno do servidor

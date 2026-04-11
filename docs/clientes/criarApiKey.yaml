@@ -1,56 +1,26 @@
 summary: Criar API Key
 description: Gera uma nova API Key para o usuário autenticado. Requer um token de acesso JWT válido.
+tags:
+  - Api Keys
 
 security:
-  - bearerAuth: []
-
-parameters:
-  - in: header
-    name: Authorization
-    description: Token de acesso JWT no formato "Bearer {token}"
-    required: true
-    schema:
-      type: string
-      example: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+  - BearerAuth: []
 responses:
   201:
     description: API Key criada com sucesso
-    content:
-      application/json:
-        schema:
+    schema:
           type: object
           properties:
             api_key:
               type: string
               description: Retorna uma nova API Key gerada para o usuário
-        example:
-          api_key: "123e4567-e89b-12d3-a456-426614174000"
+    example:
+          key: "123e4567-e89b-12d3-a456-426614174000"
   400:
     description: Requisição inválida - token de acesso ausente
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            erro:
-              type: string
-              description: Mensagem de erro detalhada
-        example:
-          erro: "Token de acesso ausente"
+    
   401:
     description: Não autorizado - token de acesso inválido ou expirado
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            erro:
-              type: string
-              description: Mensagem de erro detalhada
-        example:
-          erro: "Token de acesso inválido ou expirado"
 
   500:
     description: Erro interno do servidor
-  
-    

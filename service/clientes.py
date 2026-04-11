@@ -44,12 +44,12 @@ class Clientes:
                 "status" : "erro",
                 "mensagem" : "A key esta faltando!"
             }), 400
-        cursor.execute("SELECT key FROM clientes WHERE user_cpf = ?",(cpf, ))
+        cursor.execute("SELECT key FROM clientes WHERE user_cpf = ? and active = ?",(cpf, True))
         keys_usuario = cursor.fetchall()
         if dados['key'] not in [key[0] for key in keys_usuario]:
             return jsonify({
                 "status" : "erro",
-                "mensagem" : "Key não encontrada!"
+                "mensagem" : "Key não encontrada ou já desativada!"
             }), 404
         cursor.execute("UPDATE clientes SET active = ? WHERE key = ?", (False, dados['key']))
         conectar.commit()
@@ -57,4 +57,4 @@ class Clientes:
         return jsonify({
             "status" : "sucesso",
             "mensagem" : "Key desativada com sucesso!"
-        })
+        }), 200
